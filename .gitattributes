@@ -1,0 +1,2 @@
+# Força arquivos shell script a sempre manterem o final de linha LF
+*.sh text eol=lf
