@@ -1,0 +1,183 @@
+.page-categorias .main-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 100px 20px;
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+.page-categorias .content-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-categorias .grid-split {
+  display: grid;
+  grid-template-columns: minmax(300px, 350px) 1fr;
+  gap: 30px;
+  width: 100%;
+  align-items: start; 
+}
+
+.page-categorias .form-card {
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+  position: sticky; 
+  top: 80px;        
+}
+
+.page-categorias .card-header {
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid #f3f4f6;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.page-categorias .card-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+}
+
+.page-categorias .card-subtitle {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+.page-categorias .icon-box {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background-color: #ecfdf5;
+  color: #059669;
+  display: grid;
+  place-items: center;
+}
+
+.page-categorias .form-body {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.page-categorias .input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
+.page-categorias .label-text {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.page-categorias .input-field, 
+.page-categorias .select-field {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #d1d5db;
+  background-color: #f9fafb;
+  outline: none;
+  font-size: 0.95rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  display: block;
+}
+
+.page-categorias .input-field:focus, 
+.page-categorias .select-field:focus {
+  border-color: #10b981;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+}
+
+.page-categorias .submit-btn {
+  margin-top: 10px;
+  padding: 0.75rem;
+  border-radius: 9999px;
+  background-color: #10b981;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.page-categorias .submit-btn:hover { background-color: #059669; }
+
+.page-categorias .table-wrapper {
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border: 1px solid #e5e7eb;
+}
+
+.page-categorias .table-container {
+  max-height: calc(100vh - 150px); 
+  overflow-y: auto;   
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #10b981 #f3f4f6;
+}
+
+.page-categorias .table-container::-webkit-scrollbar { width: 6px; }
+.page-categorias .table-container::-webkit-scrollbar-track { background: #f3f4f6; }
+.page-categorias .table-container::-webkit-scrollbar-thumb {
+  background-color: #10b981;
+  border-radius: 20px;
+}
+
+.page-categorias .table-main { width: 100%; border-collapse: separate; }
+
+.page-categorias .th-custom {
+  background-color: #e8f5ef;
+  color: #059669;
+  font-weight: bold;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  padding: 1rem 2rem;
+  text-align: left;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 2px solid #10b981;
+}
+
+.page-categorias .td-custom {
+  padding: 1rem 2rem;
+  font-size: 0.9rem;
+  color: #4b5563;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.page-categorias .tr-even { background-color: #f9fafb; }
+
+.page-categorias .badge {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.page-categorias .badge-receita { background: #dcfce7; color: #15803d; }
+.page-categorias .badge-despesa { background: #fee2e2; color: #b91c1c; }
+.page-categorias .badge-ambas { background: #e0e7ff; color: #4338ca; }

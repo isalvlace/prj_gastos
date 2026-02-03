@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+.page-totais .main-wrapper {
+  background-color: #f4f7fe;
+  display: flex;
+  flex-direction: column; 
+  align-items: center;     
+  justify-content: flex-start;
+  padding: 100px 20px;
+  min-height: 100vh;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  width: 100%;             
+}
+
+.page-totais .content-container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;          
+  display: flex;
+  flex-direction: column;
+}
+
+.page-totais .section-header {
+  margin-bottom: 30px;
+  text-align: center;      
+  display: flex;
+  flex-direction: column;
+  align-items: center;     
+}
+
+.page-totais .section-title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #1b2559;  
+  margin: 0;
+}
+
+.page-totais .stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.page-totais .stat-card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 10px 30px rgba(165, 175, 221, 0.15);  
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.page-totais .stat-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(165, 175, 221, 0.3);
+}
+
+.page-totais .stat-label {
+  font-size: 0.85rem;
+  color: #a3aed0;  
+  font-weight: 600;
+  text-transform: none;
+  margin-bottom: 5px;
+}
+
+.page-totais .stat-value {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1b2559;
+}
+
+.page-totais .text-receita { 
+  color: #05cd99; 
+  text-shadow: 0 0 10px rgba(5, 205, 153, 0.2); 
+}
+.page-totais .text-despesa { 
+  color: #ee5d50; 
+  text-shadow: 0 0 10px rgba(238, 93, 80, 0.2); 
+}
+
+.page-totais .table-wrapper {
+  max-height: 450px;        
+  overflow-y: auto;         
+  overflow-x: auto;        
+  
+  position: relative;
+}
+
+.page-totais .table-wrapper::-webkit-scrollbar {
+  width: 8px;
+}
+
+.page-totais .table-wrapper::-webkit-scrollbar-track {
+  background: #f1f4f9;
+  border-radius: 10px;
+}
+
+.page-totais .table-wrapper::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+.page-totais .table-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+.page-totais .table-main thead th {
+  position: sticky;
+  top: 0;
+  z-index: 10;              
+  background-color: #f8faff;  
+}
+
+
+.page-totais .table-main {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.page-totais .th-custom {
+  background-color: #f8faff;  
+  padding: 20px 24px;
+  text-align: left;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #8f9bba;
+  text-transform: uppercase;
+  border-bottom: 1px solid #f1f4f9;
+}
+
+.page-totais .td-custom {
+  padding: 20px 24px;
+  border-bottom: 1px solid #f1f4f9;
+  color: #2b3674;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Zebra suave mas com destaque */
+.page-totais .tr-even {
+  background-color: #fdfdff;
+}
+
+.page-totais .table-main tr:hover .td-custom {
+  background-color: #f4f7fe;
+  color: #4318ff; 
+}
+
+/* Divisor elegante */
+.page-totais .section-divider {
+  margin: 70px 0;
+  border: 0;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #e0e7ff, transparent);
+}
+
+.page-totais .td-custom span {
+  padding: 6px 12px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+.page-totais .stat-card::after {
+  content: " ";
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  background: #f4f7fe;
+  border-radius: 12px;
+  opacity: 0.5;
+}

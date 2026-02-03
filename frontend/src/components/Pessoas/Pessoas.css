@@ -1,0 +1,213 @@
+.page-pessoas .main-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 100px 20px;
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box; 
+}
+
+.page-pessoas .content-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-pessoas .grid-split {
+  display: grid;
+  grid-template-columns: minmax(300px, 350px) 1fr;
+  gap: 30px;
+  width: 100%;
+  align-items: start;
+}
+
+.page-pessoas .form-card {
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+  position: sticky; 
+  top: 80px;        
+}
+
+.page-pessoas .card-header {
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid #f3f4f6;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.page-pessoas .icon-box {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background-color: #ecfdf5;
+  color: #059669;
+  display: grid;
+  place-items: center;
+}
+
+.page-pessoas .card-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+}
+
+.page-pessoas .card-subtitle {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+.page-pessoas .form-body {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.page-pessoas .input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.page-pessoas .label-text {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.page-pessoas .input-field, 
+.page-pessoas .select-field {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #d1d5db;
+  background-color: #f9fafb;
+  outline: none;
+  font-size: 0.95rem;
+  transition: border-color 0.2s;
+  display: block;
+}
+
+.page-pessoas .input-field:focus {
+  border-color: #10b981;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+}
+
+.page-pessoas .submit-btn {
+  margin-top: 10px;
+  padding: 0.75rem;
+  border-radius: 9999px;
+  background-color: #10b981;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.page-pessoas .submit-btn:hover { background-color: #059669; }
+
+.page-pessoas .btn-secondary {
+  display: block;
+  width: 100%;
+  padding: 12px;      
+  margin-top: 8px;
+  border-radius: 8px; 
+  border: 1px solid #d1d5db;
+  background-color: #ffffff;
+  color: #4b5563;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-sizing: border-box; 
+}
+
+.page-pessoas .btn-secondary:hover {
+  background-color: #c2dcf6;
+  border-color: #9ca3af;
+}
+
+.page-pessoas .table-wrapper {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border: 1px solid #e5e7eb;
+}
+
+.page-pessoas .table-container {
+  max-height: calc(100vh - 150px); 
+  overflow-y: auto;  
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #10b981 #f3f4f6;
+}
+
+.page-pessoas .table-container::-webkit-scrollbar { width: 6px; }
+.page-pessoas .table-container::-webkit-scrollbar-track { background: #f3f4f6; }
+.page-pessoas .table-container::-webkit-scrollbar-thumb {
+  background-color: #10b981;
+  border-radius: 20px;
+}
+
+.page-pessoas .table-main { width: 100%; border-collapse: separate; }
+
+.page-pessoas .th-custom {
+  background-color: #e8f5ef;
+  color: #059669;
+  font-weight: bold;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  padding: 1rem 2rem;
+  text-align: left;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 2px solid #10b981;
+}
+
+.page-pessoas .td-custom {
+  padding: 1rem 2rem;
+  font-size: 0.9rem;
+  color: #4b5563;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.page-pessoas .tr-even { background-color: #f9fafb; }
+
+.page-pessoas .delete-btn {
+  background-color: transparent;
+  color: #ef4444;
+  border: 1px solid #fee2e2;
+  padding: 4px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.75rem;
+  transition: all 0.2s;
+}
+
+.page-pessoas .delete-btn:hover { background-color: #fee2e2; }
+
+.page-pessoas .table-main .submit-btn {
+  padding: 4px 12px;
+  font-size: 0.75rem;
+  width: auto;
+  margin-top: 0;
+  background-color: #3b82f6;
+  border-radius: 6px;
+}
+
+.page-pessoas .table-main .submit-btn:hover { background-color: #2563eb; }

@@ -1,0 +1,178 @@
+.page-transacoes .main-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 100px 20px;
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+.page-transacoes .content-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-transacoes .grid-split {
+  display: grid;
+  grid-template-columns: minmax(300px, 350px) 1fr;
+  gap: 30px;
+  width: 100%;
+  align-items: start;
+}
+
+.page-transacoes .form-card {
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+  position: sticky;
+  top: 80px;
+}
+
+.page-transacoes .card-header {
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid #f3f4f6;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.page-transacoes .card-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+}
+
+.page-transacoes .card-subtitle {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+.page-transacoes .icon-box {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background-color: #fef3c7;
+  color: #d97706;
+  display: grid;
+  place-items: center;
+}
+
+.page-transacoes .form-body {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.page-transacoes .input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.page-transacoes .label-text {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+.page-transacoes .input-field, 
+.page-transacoes .select-field {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #d1d5db;
+  background-color: #f9fafb;
+  outline: none;
+  font-size: 0.95rem;
+  transition: border-color 0.2s;
+  display: block;
+}
+
+.page-transacoes .input-field:focus, 
+.page-transacoes .select-field:focus {
+  border-color: #d97706;
+  box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.1);
+}
+
+.page-transacoes .submit-btn {
+  margin-top: 10px;
+  padding: 0.75rem;
+  border-radius: 9999px;
+  background-color: #d97706;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.page-transacoes .submit-btn:hover { background-color: #b45309; }
+
+.page-transacoes .table-wrapper {
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border: 1px solid #e5e7eb;
+}
+
+.page-transacoes .table-container {
+  max-height: 600px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #d97706 #fffbeb;
+}
+
+.page-transacoes .table-container::-webkit-scrollbar { width: 6px; }
+.page-transacoes .table-container::-webkit-scrollbar-track { background: #fffbeb; }
+.page-transacoes .table-container::-webkit-scrollbar-thumb {
+  background-color: #d97706;
+  border-radius: 20px;
+}
+
+.page-transacoes .table-main { width: 100%; border-collapse: separate; }
+
+.page-transacoes .th-custom {
+  background-color: #fffbeb;
+  color: #92400e;
+  font-weight: bold;
+  font-size: 0.75rem;
+  padding: 1rem 1.5rem;
+  text-align: left;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 2px solid #fbbf24;
+}
+
+.page-transacoes .td-custom {
+  padding: 1rem 1.5rem;
+  font-size: 0.9rem;
+  color: #4b5563;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.page-transacoes .tr-even { background-color: #fffaf0; }
+
+.page-transacoes .badge {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.page-transacoes .badge-receita { background: #dcfce7; color: #15803d; }
+.page-transacoes .badge-despesa { background: #fee2e2; color: #b91c1c; }
