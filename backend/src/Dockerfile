@@ -6,7 +6,6 @@ RUN dotnet tool install --global dotnet-ef
 ENV PATH="$PATH:/root/.dotnet/tools"
 
 # 2. Copia tudo do context (backend/) para /app
-# Como o entrypoint está em src, ele ficará em /app/src/entrypoint.sh
 COPY . .
 
 # 3. Ajuste do caminho: O chmod aponta para a pasta src
