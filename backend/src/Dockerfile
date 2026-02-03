@@ -1,13 +1,20 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0
 WORKDIR /app
-COPY . .
 
-# Instala a ferramenta EF globalmente
+# 1. Instala a ferramenta EF globalmente
 RUN dotnet tool install --global dotnet-ef
 ENV PATH="$PATH:/root/.dotnet/tools"
 
-WORKDIR /app/Gastos.Api
+# 2. Copia tudo do context (backend/) para /app
+# Como o entrypoint está em src, ele ficará em /app/src/entrypoint.sh
+COPY . .
+
+# 3. Ajuste do caminho: O chmod aponta para a pasta src
+RUN chmod +x ./src/entrypoint.sh
+
+# 4. Entra na pasta do projeto para restaurar
+WORKDIR /app/src/Gastos.Api
 RUN dotnet restore
 
-RUN chmod +x /app/entrypoint.sh
-ENTRYPOINT ["/app/entrypoint.sh"]
+# 5. Define o Entrypoint apontando para o local correto dentro de src
+ENTRYPOINT ["/bin/sh", "/app/src/entrypoint.sh"]

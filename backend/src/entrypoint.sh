@@ -9,7 +9,8 @@ export PATH="$PATH:/root/.dotnet/tools"
 echo "Aguardando 15 segundos para o SQL Server estabilizar..."
 sleep 15
 
-APP_PATH="/app/Gastos.Api"
+# Caminho ajustado para encontrar o projeto dentro da pasta src
+APP_PATH="/app/src/Gastos.Api"
 cd "$APP_PATH"
 
 # Verifica se precisa de build

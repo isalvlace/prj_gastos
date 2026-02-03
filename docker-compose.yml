@@ -12,8 +12,8 @@ services:
 
   api:
     build:
-      context: ./backend/src
-      dockerfile: Dockerfile
+      context: ./backend
+      dockerfile: src/Dockerfile
     container_name: gastos-api
     restart: always
     environment:
