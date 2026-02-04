@@ -19,7 +19,7 @@ Este projeto está conteinerizado. Você não precisa instalar SDKs ou Bancos de
 
 ### 1. Clonar o repositório 
 ```bash
-git clone https://github.com/isalvlace/prj_glsastos.git
+git clone https://github.com/isalvlace/prj_gastos.git
 
 cd prj_gastos
 
